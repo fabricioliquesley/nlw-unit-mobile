@@ -1,6 +1,8 @@
 import axios from "axios";
 
+// your computer's ipv4 address || o endereço ipv4 de seu computador
+const ID = "";
+
 export const api = axios.create({
-  // ipv4 Ethernet 2
-  baseURL: "http://192.168.2.13:3333"
-})
+  baseURL: `http://${ID}:3333`,
+});
